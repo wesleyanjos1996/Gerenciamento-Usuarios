@@ -11,10 +11,13 @@
   <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
   <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
 </head>
+
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
+
   <!-- Main Header -->
   <header class="main-header">
+
     <!-- Logo -->
     <a href="index2.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
@@ -22,6 +25,7 @@
       <!-- logo for regular state and mobile devices -->
       <span class="logo-lg">HCODE</span>
     </a>
+
     <!-- Header Navbar -->
     <nav class="navbar navbar-static-top" role="navigation">
       <!-- Sidebar toggle button-->
@@ -44,6 +48,7 @@
               <!-- The user image in the menu -->
               <li class="user-header">
                 <img src="dist/img/avatar5.png" class="img-circle" alt="User Image">
+
                 <p>
                   Fulano Junior - Web Developer
                   <small>Membro desde Abr. 2018</small>
@@ -81,8 +86,10 @@
   </header>
   <!-- Left side column. contains the logo and sidebar -->
   <aside class="main-sidebar">
+
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
+
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel">
         <div class="pull-left image">
@@ -94,6 +101,7 @@
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
+
       <!-- Sidebar Menu -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MENU</li>
@@ -104,6 +112,7 @@
     </section>
     <!-- /.sidebar -->
   </aside>
+
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -117,17 +126,20 @@
         <li class="active">Usuários</li>
       </ol>
     </section>
+
     <!-- Main content -->
     <section class="content container-fluid">
+
       <div class="row">
         <div class="col-md-8">
+
           <div class="box">
             <div class="box-header">
               <h3 class="box-title">Lista de Usuários</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body no-padding">
-              <table class="table table-striped" id="table-users">
+              <table class="table table-striped">
                 <thead>
                   <tr>
                     <th style="width: 10px">Foto</th>
@@ -138,22 +150,27 @@
                     <th>Ações</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody id="table-users">
+
+
                   
                 </tbody>
               </table>
             </div>
             <!-- /.box-body -->
           </div>
+
         </div>
         <div class="col-md-4">
+
           <div class="row">
+          
             <!-- ./col -->
             <div class="col-xs-6">
               <!-- small box -->
               <div class="small-box bg-green">
                 <div class="inner">
-                  <h3>44</h3>
+                  <h3 id="number-users">0</h3>
           
                   <p>Novos Usuários</p>
                 </div>
@@ -167,7 +184,7 @@
               <!-- small box -->
               <div class="small-box bg-yellow">
                 <div class="inner">
-                  <h3>15</h3>
+                  <h3 id="number-users-admin">0</h3>
           
                   <p>Administradores</p>
                 </div>
@@ -178,6 +195,7 @@
             </div>
             <!-- ./col -->
           </div>
+
           <div class="box box-success">
             <div class="box-header with-border">
               <h3 class="box-title">Novo Usuário</h3>
@@ -188,10 +206,10 @@
               <div class="box-body">
                 <div class="form-group">
                   <label for="exampleInputName">Nome</label>
-                  <input type="text" class="form-control" id="exampleInputName" placeholder="Digite o nome do usuário" name="name" autocomplete="name">
+                  <input required type="text" class="form-control" id="exampleInputName" placeholder="Digite o nome do usuário" name="name">
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputGenderM">Gênero</label>
+                  <label>Gênero</label>
                   <div class="radio">
                     <label for="exampleInputGenderM">
                       <input type="radio" id="exampleInputGenderM" name="gender" value="M" checked>
@@ -209,8 +227,8 @@
                 </div>
                 <div class="form-group">
                   <label for="exampleInputCountry">País</label>
-                  <select class="form-control" id="exampleInputCountry" name="country" autocomplete="country-name">
-                    <option value="" selected>Selecione um país</option>
+                  <select class="form-control" id="exampleInputCountry" name="country">
+                    <option selected="selected" value="" >Selecione um país</option>
                     <option value="United States">United States</option>
                     <option value="United Kingdom">United Kingdom</option>
                     <option value="Afghanistan">Afghanistan</option>
@@ -456,11 +474,11 @@
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">E-mail</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Digite o e-mail" name="email" autocomplete="email">
+                  <input required type="email" class="form-control" id="exampleInputEmail" placeholder="Digite o e-mail" name="email">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">Senha</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Crie uma senha" name="password" autocomplete="new-password">
+                  <input required type="password" class="form-control" id="exampleInputPassword" placeholder="Crie uma senha" name="password">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputFile">Foto</label>
@@ -468,7 +486,7 @@
                 </div>
                 <div class="checkbox">
                   <label>
-                    <input type="checkbox" name="admin" id="admin"> Administrador
+                    <input type="checkbox" name="admin" id="exampleInputAdmin"> Administrador
                   </label>
                 </div>
               </div>
@@ -481,10 +499,12 @@
 
         </div>
       </div>
+
     </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
+
   <!-- Main Footer -->
   <footer class="main-footer">
     <!-- To the right -->
@@ -494,10 +514,12 @@
     <!-- Default to the left -->
     Projeto desenvolvido no curso online de JavaScript da Hcode Treinamentos.
   </footer>
+
 </div>
-<script src="./classes/Utils.js" type="text/javascript"></script>
-<script src="./models/User.js" type="text/javascript"></script>
-<script src="./controllers/UserController.js" type="text/javascript"></script>
-<script src="./js/script.js" type="text/javascript"></script>
+
+<script src="./classes/Utils.js"></script>
+<script src="./models/User.js"></script>
+<script src="./controllers/UserController.js"></script>
+<script src="./js/script.js"></script>
 </body>
 </html>
