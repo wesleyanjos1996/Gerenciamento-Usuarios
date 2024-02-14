@@ -206,10 +206,10 @@
               <div class="box-body">
                 <div class="form-group">
                   <label for="exampleInputName">Nome</label>
-                  <input required type="text" class="form-control" id="exampleInputName" placeholder="Digite o nome do usuário" name="name" autocomplete="name">
+                  <input required type="text" class="form-control" id="exampleInputName" placeholder="Digite o nome do usuário" name="name">
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputGenderM">Gênero</label>
+                  <label>Gênero</label>
                   <div class="radio">
                     <label for="exampleInputGenderM">
                       <input type="radio" id="exampleInputGenderM" name="gender" value="M" checked>
@@ -227,7 +227,7 @@
                 </div>
                 <div class="form-group">
                   <label for="exampleInputCountry">País</label>
-                  <select class="form-control" id="exampleInputCountry" name="country" autocomplete="country">
+                  <select class="form-control" id="exampleInputCountry" name="country">
                     <option selected="selected" value="" >Selecione um país</option>
                     <option value="United States">United States</option>
                     <option value="United Kingdom">United Kingdom</option>
@@ -473,19 +473,19 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputEmail">E-mail</label>
-                  <input required type="email" class="form-control" id="exampleInputEmail" placeholder="Digite o e-mail" name="email" autocomplete="email">
+                  <label for="exampleInputEmail1">E-mail</label>
+                  <input required type="email" class="form-control" id="exampleInputEmail" placeholder="Digite o e-mail" name="email">
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputPassword">Senha</label>
-                  <input required type="password" class="form-control" id="exampleInputPassword" placeholder="Crie uma senha" name="password" autocomplete="current-password">
+                  <label for="exampleInputPassword1">Senha</label>
+                  <input required type="password" class="form-control" id="exampleInputPassword" placeholder="Crie uma senha" name="password">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputFile">Foto</label>
                   <input type="file" id="exampleInputFile" name="photo">
                 </div>
                 <div class="checkbox">
-                  <label for="exampleInputAdmin">
+                  <label>
                     <input type="checkbox" name="admin" id="exampleInputAdmin"> Administrador
                   </label>
                 </div>
@@ -497,38 +497,38 @@
             </form>
           </div>
 
-          <div class="box box-primary" id="box-user-update" style="display: none;">
+          <div class="box box-primary" id="box-user-update"style="display: none;">
             <div class="box-header with-border">
-              <h3 class="box-title">Ediatr Usuário</h3>
+              <h3 class="box-title">Editar Usuário</h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
             <form role="form" id="form-user-update">
               <div class="box-body">
                 <div class="form-group">
-                  <label for="exampleInputNameUpdate">Nome</label>
-                  <input required type="text" class="form-control" id="exampleInputNameUpdate" placeholder="Digite o nome do usuário" name="name" autocomplete="additional-name">
+                  <label for="exampleInputName">Nome</label>
+                  <input required type="text" class="form-control" id="exampleInputNameUpdate" placeholder="Digite o nome do usuário" name="name">
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputGenderMUpdate">Gênero</label>
+                  <label>Gênero</label>
                   <div class="radio">
-                    <label for="exampleInputGenderMUpdate">
+                    <label for="exampleInputGenderM">
                       <input type="radio" id="exampleInputGenderMUpdate" name="gender" value="M" checked>
                       Masculino</label>
                   </div>
                   <div class="radio">
-                    <label for="exampleInputGenderFUpdate">
+                    <label for="exampleInputGenderF">
                       <input type="radio" id="exampleInputGenderFUpdate" name="gender" value="F">
                       Feminino</label>
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputBirthUpdate">Nascimento</label>
+                  <label for="exampleInputBirth">Nascimento</label>
                   <input type="date" class="form-control" id="exampleInputBirthUpdate" name="birth">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputCountry">País</label>
-                  <select class="form-control" id="exampleInputCountryUpdate" name="country" autocomplete="country">
+                  <select class="form-control" id="exampleInputCountryUpdate" name="country">
                     <option selected="selected" value="" >Selecione um país</option>
                     <option value="United States">United States</option>
                     <option value="United Kingdom">United Kingdom</option>
@@ -774,19 +774,20 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputEmailUpdate">E-mail</label>
-                  <input required type="email" class="form-control" id="exampleInputEmailUpdate" placeholder="Digite o e-mail" name="email" autocomplete="email">
+                  <label for="exampleInputEmail1">E-mail</label>
+                  <input required type="email" class="form-control" id="exampleInputEmailUpdate" placeholder="Digite o e-mail" name="email">
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputPasswordUpdate">Senha</label>
-                  <input required type="password" class="form-control" id="exampleInputPasswordUpdate" placeholder="Crie uma senha" name="password" autocomplete="current-password">
+                  <label for="exampleInputPassword1">Senha</label>
+                  <input required type="password" class="form-control" id="exampleInputPasswordUpdate" placeholder="Crie uma senha" name="password">
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputFileUpdate">Foto</label>
+                  <img src="dist/img/boxed-bg.jpg" class="photo" style="max-height: 128px;">
+                  <label for="exampleInputFile">Foto</label>
                   <input type="file" id="exampleInputFileUpdate" name="photo">
                 </div>
                 <div class="checkbox">
-                  <label for="exampleInputAdminUpdate">
+                  <label>
                     <input type="checkbox" name="admin" id="exampleInputAdminUpdate"> Administrador
                   </label>
                 </div>
